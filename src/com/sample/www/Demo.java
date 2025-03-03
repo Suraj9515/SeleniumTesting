@@ -14,25 +14,25 @@ public class Demo {
 	public void startUp() throws InterruptedException {
 	WebDriverManager.firefoxdriver().setup();
 	WebDriver driver=new FirefoxDriver();
-	
+
 	driver.get("https://demoqa.com/droppable/");
-	
+
 	Thread.sleep(3000);
-	
+
 	//WebElement ele = driver.findElement(By.className("nDcEnd"));
-	
+
 	//Actions a=new Actions(driver);
-	
+
 	//a.moveToElement(ele).click().perform();
-	
+
 	WebElement dragablle = driver.findElement(By.id("draggable"));
-	
+
 	Thread.sleep(3000);
 	WebElement droparea = driver.findElement(By.id("droppable"));
-	
+
 	Actions a=new Actions(driver);
 	//a.dragAndDrop(dragablle, droparea).perform();
 	a.moveToElement(dragablle).clickAndHold(dragablle).moveToElement(droparea).release(dragablle).perform();
-	
+
 }
 }

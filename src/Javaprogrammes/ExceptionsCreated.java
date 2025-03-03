@@ -11,13 +11,13 @@ public class ExceptionsCreated {
 		String rd=null;
 		Double d=new Double(a);
 		try {
-			//Integer c=new Integer(b);	
+			//Integer c=new Integer(b);
 			//String convertStringednumber =Integer.toString(number);
 			//System.out.println(convertStringednumber);
-			
-			//null pointer exception 
+
+			//null pointer exception
 			rd.charAt(0);
-			
+
 			//number format exception
 			int g=Integer.parseInt(s);
 			System.out.println(g);
